@@ -19,7 +19,20 @@
         <view contentMode="scaleToFill" id="g9x-p7-X5F">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XF7-Bz-550">
+                    <rect key="frame" x="191" y="438" width="32" height="30"/>
+                    <state key="normal" title="Auth"/>
+                    <connections>
+                        <action selector="onAuthButtonTap:" destination="-1" eventType="touchUpInside" id="26k-GB-45k"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XF7-Bz-550" firstAttribute="centerX" secondItem="8cJ-aV-hQC" secondAttribute="centerX" id="kF9-nf-5UC"/>
+                <constraint firstItem="XF7-Bz-550" firstAttribute="centerY" secondItem="8cJ-aV-hQC" secondAttribute="centerY" id="nZp-QU-1W6"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="8cJ-aV-hQC"/>
             <point key="canvasLocation" x="241" y="-74"/>
         </view>
