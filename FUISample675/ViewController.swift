@@ -39,5 +39,7 @@ class ViewController: UIViewController {
     }
 
     private func openRootScene() {
+        let vc = RootViewController()
+        (UIApplication.shared.delegate as? AppDelegate)?.window?.rootViewController = vc
     }
 }
