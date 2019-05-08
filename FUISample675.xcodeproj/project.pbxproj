@@ -59,6 +59,7 @@
 		6EFA550E2283986800B70E93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6EFA551022839C2200B70E93 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		6EFA551222839C3700B70E93 /* RootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		6EFA55142283A09800B70E93 /* FUISample675.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FUISample675.entitlements; sourceTree = "<group>"; };
 		74BE80CFF97FE2B83C885C01 /* Pods-FUISample675Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FUISample675Tests.debug.xcconfig"; path = "Target Support Files/Pods-FUISample675Tests/Pods-FUISample675Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		86DD9CD9947812A595322DE2 /* Pods-FUISample675.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FUISample675.debug.xcconfig"; path = "Target Support Files/Pods-FUISample675/Pods-FUISample675.debug.xcconfig"; sourceTree = "<group>"; };
 		B395206C948F6FA401D98C39 /* Pods-FUISample675Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FUISample675Tests.release.xcconfig"; path = "Target Support Files/Pods-FUISample675Tests/Pods-FUISample675Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +121,7 @@
 		6EFA54DF2283936500B70E93 /* FUISample675 */ = {
 			isa = PBXGroup;
 			children = (
+				6EFA55142283A09800B70E93 /* FUISample675.entitlements */,
 				6EFA54E02283936500B70E93 /* AppDelegate.swift */,
 				6EFA54E22283936500B70E93 /* ViewController.swift */,
 				6EFA54E42283936500B70E93 /* Main.storyboard */,
@@ -247,6 +249,11 @@
 				TargetAttributes = {
 					6EFA54DC2283936500B70E93 = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					6EFA54F02283936900B70E93 = {
 						CreatedOnToolsVersion = 10.2;
@@ -647,8 +654,11 @@
 			baseConfigurationReference = 86DD9CD9947812A595322DE2 /* Pods-FUISample675.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FUISample675/FUISample675.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JS5D26M66;
+				FACEBOOK_APP_ID = 1040165183038776;
+				FACEBOOK_DISPLAY_NAME = FUISample675;
 				GOOGLE_REVERSED_CLIENT_ID = "com.googleusercontent.apps.775689654325-moh9gntkuaeufldtjuuvlp6k5odv4m36";
 				INFOPLIST_FILE = FUISample675/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -668,8 +678,11 @@
 			baseConfigurationReference = F1EEFB49E4985827CD7DBFCD /* Pods-FUISample675.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FUISample675/FUISample675.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JS5D26M66;
+				FACEBOOK_APP_ID = 1040165183038776;
+				FACEBOOK_DISPLAY_NAME = FUISample675;
 				GOOGLE_REVERSED_CLIENT_ID = "com.googleusercontent.apps.775689654325-moh9gntkuaeufldtjuuvlp6k5odv4m36";
 				INFOPLIST_FILE = FUISample675/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

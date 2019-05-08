@@ -33,6 +33,7 @@ class RootViewController: UIViewController {
     private func openAuthScene() {
         guard let authUI = FUIAuth.defaultAuthUI() else { return }
         authUI.providers = [
+            FUIFacebookAuth(),
             FUIGoogleAuth()
         ]
         authUI.shouldAutoUpgradeAnonymousUsers = true
